@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <div class="sortable-table">
+      <div class="project-top">
+        <div class="project-top-text" id="sortYear">year</div>
+        <div class="project-top-text" id="sortCategory">category</div>
+        <div class="project-top-text" id="sortTitle">project title</div>
+        <div class="project-top-text" id="sortSize">size</div>
+        <div class="project-top-text" id="sortStatus">status</div>
+      </div>
+    </div>
+    <div class="sortable-table" id="project-table">
+      <!-- Structure of each row item -->
+      <div class="project-wrapper" id="0">
+        <div class="project-row">
+          <div class="project-col"><p>2000</p></div>
+          <div class="project-col"><p>Residences</p></div>
+          <div class="project-col"><p>An Awesome Project</p></div>
+          <div class="project-col"><p>20,000 sqm</p></div>
+          <div class="project-col expandable" id="0-action">
+            <p>Completed</p>
+          </div>
+        </div>
+        <div class="expanded" id="0-expand">
+          <div class="project-details">
+            <div class="text">
+              <h1>Hello World!</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+                magnam voluptatem repudiandae, hic placeat dolores?
+                Necessitatibus earum et, consectetur, maiores blanditiis sit
+                placeat, quisquam ipsa minima dolores laudantium deleniti hic.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                voluptas magni cumque vel, aliquam quaerat fuga dolores. Dolor
+                laudantium facilis numquam error veniam? At, vitae! Possimus
+                odio distinctio est! Vero.
+              </p>
+            </div>
+            <div class="slider">
+              <img src="https://source.unsplash.com/random/800x600" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    const foo = {
+      data: [
+        {
+          id: 1,
+          year: 2044,
+          projectCategory: "Residential",
+          projectTitle: "A Cool Project",
+          projectSize: "42,000 sqm",
+          projectStatus: "Completed",
+          projectExpandable: true,
+          projectDetails: [
+            {
+              summary: "lorem ipsums",
+              slider_images: [
+                {
+                  imgOne: [
+                    {
+                      xs: "path-to-img.png",
+                      s: "path-to-img.png",
+                      m: "path-to-img.png",
+                      l: "path-to-img.png",
+                      xl: "path-to-img.png"
+                    }
+                  ],
+                  imgTwo: [
+                    {
+                      xs: "path-to-img.png",
+                      s: "path-to-img.png",
+                      m: "path-to-img.png",
+                      l: "path-to-img.png",
+                      xl: "path-to-img.png"
+                    }
+                  ],
+                  imgThree: [
+                    {
+                      xs: "path-to-img.png",
+                      s: "path-to-img.png",
+                      m: "path-to-img.png",
+                      l: "path-to-img.png",
+                      xl: "path-to-img.png"
+                    }
+                  ]
+                }
+              ],
+              awards: ["Best Building Ever", "Highest Building Ever"]
+            }
+          ]
+        },
+        {
+          id: 2,
+          year: 2001,
+          projectCategory: "Residential",
+          projectTitle: "A Cool Project",
+          projectSize: "42,000 sqm",
+          projectStatus: "Under Construction",
+          projectExpandable: true,
+          projectDetails: [
+            {
+              summary: "lorem ipsums",
+              slider_images: [
+                {
+                  imgOne: [
+                    {
+                      xs: "path-to-img.png",
+                      s: "path-to-img.png",
+                      m: "path-to-img.png",
+                      l: "path-to-img.png",
+                      xl: "path-to-img.png"
+                    }
+                  ],
+                  imgTwo: [
+                    {
+                      xs: "path-to-img.png",
+                      s: "path-to-img.png",
+                      m: "path-to-img.png",
+                      l: "path-to-img.png",
+                      xl: "path-to-img.png"
+                    }
+                  ],
+                  imgThree: [
+                    {
+                      xs: "path-to-img.png",
+                      s: "path-to-img.png",
+                      m: "path-to-img.png",
+                      l: "path-to-img.png",
+                      xl: "path-to-img.png"
+                    }
+                  ]
+                }
+              ],
+              awards: ["Best Building Ever", "Highest Building Ever"]
+            }
+          ]
+        },
+        {
+          id: 3,
+          year: 2002,
+          projectCategory: "Residential",
+          projectTitle: "A Cool Project",
+          projectSize: "41,000 sqm",
+          projectStatus: "Under Construction",
+          projectExpandable: true,
+          projectDetails: [
+            {
+              summary: "lorem ipsums",
+              slider_images: [
+                {
+                  imgOne: [
+                    {
+                      xs: "path-to-img.png",
+                      s: "path-to-img.png",
+                      m: "path-to-img.png",
+                      l: "path-to-img.png",
+                      xl: "path-to-img.png"
+                    }
+                  ],
+                  imgTwo: [
+                    {
+                      xs: "path-to-img.png",
+                      s: "path-to-img.png",
+                      m: "path-to-img.png",
+                      l: "path-to-img.png",
+                      xl: "path-to-img.png"
+                    }
+                  ],
+                  imgThree: [
+                    {
+                      xs: "path-to-img.png",
+                      s: "path-to-img.png",
+                      m: "path-to-img.png",
+                      l: "path-to-img.png",
+                      xl: "path-to-img.png"
+                    }
+                  ]
+                }
+              ],
+              awards: ["Best Building Ever", "Highest Building Ever"]
+            }
+          ]
+        }
+      ]
+    };
+
+    const bar = foo.data;
+  </script>
+  <script src="main.js"></script>
+</html>

@@ -1,0 +1,96 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "year": 2000,
+      "projectCategory": "Residential",
+      "projectTitle": "A Cool Project",
+      "projectSize": "42000sqm",
+      "projectStatus": "Completed",
+      "projectExpandable": false,
+      "projectDetails": [
+        {
+          "summary": "lorem ipsums",
+          "slider_images": [
+            {
+              "imgOne": [
+                {
+                  "xs": "path-to-img.png",
+                  "s": "path-to-img.png",
+                  "m": "path-to-img.png",
+                  "l": "path-to-img.png",
+                  "xl": "path-to-img.png"
+                }
+              ],
+              "imgTwo": [
+                {
+                  "xs": "path-to-img.png",
+                  "s": "path-to-img.png",
+                  "m": "path-to-img.png",
+                  "l": "path-to-img.png",
+                  "xl": "path-to-img.png"
+                }
+              ],
+              "imgThree": [
+                {
+                  "xs": "path-to-img.png",
+                  "s": "path-to-img.png",
+                  "m": "path-to-img.png",
+                  "l": "path-to-img.png",
+                  "xl": "path-to-img.png"
+                }
+              ]
+            }
+          ],
+          "awards": ["Best Building Ever", "Highest Building Ever"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "year": 2000,
+      "projectCategory": "Residential",
+      "projectTitle": "A Cool Project",
+      "projectSize": "42000sqm",
+      "projectStatus": "Under Construction",
+      "projectExpandable": true,
+      "projectDetails": [
+        {
+          "summary": "lorem ipsums",
+          "slider_images": [
+            {
+              "imgOne": [
+                {
+                  "xs": "path-to-img.png",
+                  "s": "path-to-img.png",
+                  "m": "path-to-img.png",
+                  "l": "path-to-img.png",
+                  "xl": "path-to-img.png"
+                }
+              ],
+              "imgTwo": [
+                {
+                  "xs": "path-to-img.png",
+                  "s": "path-to-img.png",
+                  "m": "path-to-img.png",
+                  "l": "path-to-img.png",
+                  "xl": "path-to-img.png"
+                }
+              ],
+              "imgThree": [
+                {
+                  "xs": "path-to-img.png",
+                  "s": "path-to-img.png",
+                  "m": "path-to-img.png",
+                  "l": "path-to-img.png",
+                  "xl": "path-to-img.png"
+                }
+              ]
+            }
+          ],
+          "awards": ["Best Building Ever", "Highest Building Ever"]
+        }
+      ]
+    }
+  ]
+}

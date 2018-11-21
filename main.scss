@@ -37,7 +37,6 @@ body {
   outline: none;
 }
 .expanded {
-  padding-left: 18px;
   background-color: #ccc;
   display: none;
   overflow: hidden;
@@ -47,6 +46,23 @@ body {
     margin-bottom: -4px;
     .text {
       flex-basis: 55%;
+      h1,
+      .summary,
+      .expanded-award {
+        padding: 0 20px 0 15px;
+      }
+      .summary {
+        background-color: rgba(255, 196, 35, 0.568);
+      }
+      .expanded-award {
+        background-color: rgba(20, 104, 214, 0.616);
+        ul {
+          padding: 0;
+        }
+        li {
+          list-style-type: none;
+        }
+      }
     }
     .slider {
       flex-basis: 45%;

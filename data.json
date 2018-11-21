@@ -1,96 +1,542 @@
-{
-  "data": [
-    {
-      "id": 1,
-      "year": 2000,
-      "projectCategory": "Residential",
-      "projectTitle": "A Cool Project",
-      "projectSize": "42000sqm",
-      "projectStatus": "Completed",
-      "projectExpandable": false,
-      "projectDetails": [
-        {
-          "summary": "lorem ipsums",
-          "slider_images": [
-            {
-              "imgOne": [
-                {
-                  "xs": "path-to-img.png",
-                  "s": "path-to-img.png",
-                  "m": "path-to-img.png",
-                  "l": "path-to-img.png",
-                  "xl": "path-to-img.png"
-                }
-              ],
-              "imgTwo": [
-                {
-                  "xs": "path-to-img.png",
-                  "s": "path-to-img.png",
-                  "m": "path-to-img.png",
-                  "l": "path-to-img.png",
-                  "xl": "path-to-img.png"
-                }
-              ],
-              "imgThree": [
-                {
-                  "xs": "path-to-img.png",
-                  "s": "path-to-img.png",
-                  "m": "path-to-img.png",
-                  "l": "path-to-img.png",
-                  "xl": "path-to-img.png"
-                }
-              ]
-            }
-          ],
-          "awards": ["Best Building Ever", "Highest Building Ever"]
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "year": 2000,
-      "projectCategory": "Residential",
-      "projectTitle": "A Cool Project",
-      "projectSize": "42000sqm",
-      "projectStatus": "Under Construction",
-      "projectExpandable": true,
-      "projectDetails": [
-        {
-          "summary": "lorem ipsums",
-          "slider_images": [
-            {
-              "imgOne": [
-                {
-                  "xs": "path-to-img.png",
-                  "s": "path-to-img.png",
-                  "m": "path-to-img.png",
-                  "l": "path-to-img.png",
-                  "xl": "path-to-img.png"
-                }
-              ],
-              "imgTwo": [
-                {
-                  "xs": "path-to-img.png",
-                  "s": "path-to-img.png",
-                  "m": "path-to-img.png",
-                  "l": "path-to-img.png",
-                  "xl": "path-to-img.png"
-                }
-              ],
-              "imgThree": [
-                {
-                  "xs": "path-to-img.png",
-                  "s": "path-to-img.png",
-                  "m": "path-to-img.png",
-                  "l": "path-to-img.png",
-                  "xl": "path-to-img.png"
-                }
-              ]
-            }
-          ],
-          "awards": ["Best Building Ever", "Highest Building Ever"]
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "year": 2006,
+    "projectCategory": "Nissan",
+    "projectTitle": "Polarised",
+    "projectStatus": "Male",
+    "projectExpandable": true,
+    "projectDetails": [
+      {
+        "summary": "Seamless multi-tasking data-warehouse",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/483x317.jpg/cc0000/ffffff",
+                "s": "http://dummyimage.com/305x467.jpg/5fa2dd/ffffff",
+                "m": "http://dummyimage.com/348x378.jpg/ff4444/ffffff",
+                "l": "http://dummyimage.com/486x363.jpg/dddddd/000000",
+                "xl": "http://dummyimage.com/500x453.jpg/ff4444/ffffff"
+              }
+            ]
+          }
+        ],
+        "awards": ["Blue", "Crimson", "Turquoise"]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "year": 1993,
+    "projectCategory": "Jeep",
+    "projectTitle": "Multi-channelled",
+    "projectStatus": "Female",
+    "projectExpandable": true,
+    "projectDetails": [
+      {
+        "summary": "Business-focused cohesive encoding",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/300x326.jpg/ff4444/ffffff",
+                "s": "http://dummyimage.com/314x333.jpg/ff4444/ffffff",
+                "m": "http://dummyimage.com/375x303.jpg/cc0000/ffffff",
+                "l": "http://dummyimage.com/341x499.jpg/5fa2dd/ffffff",
+                "xl": "http://dummyimage.com/389x385.jpg/dddddd/000000"
+              }
+            ]
+          }
+        ],
+        "awards": ["Fuscia", "Maroon", "Blue"]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "year": 2008,
+    "projectCategory": "Toyota",
+    "projectTitle": "alliance",
+    "projectStatus": "Female",
+    "projectExpandable": false,
+    "projectDetails": [
+      {
+        "summary": "Persevering 24 hour concept",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/446x333.jpg/dddddd/000000",
+                "s": "http://dummyimage.com/409x467.jpg/cc0000/ffffff",
+                "m": "http://dummyimage.com/411x496.jpg/5fa2dd/ffffff",
+                "l": "http://dummyimage.com/478x413.jpg/5fa2dd/ffffff",
+                "xl": "http://dummyimage.com/371x316.jpg/dddddd/000000"
+              }
+            ]
+          }
+        ],
+        "awards": ["Goldenrod", "Mauv", "Yellow"]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "year": 1999,
+    "projectCategory": "Oldsmobile",
+    "projectTitle": "Monitored",
+    "projectStatus": "Male",
+    "projectExpandable": true,
+    "projectDetails": [
+      {
+        "summary": "Proactive zero defect orchestration",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/498x441.jpg/ff4444/ffffff",
+                "s": "http://dummyimage.com/385x395.jpg/cc0000/ffffff",
+                "m": "http://dummyimage.com/353x363.jpg/5fa2dd/ffffff",
+                "l": "http://dummyimage.com/303x311.jpg/5fa2dd/ffffff",
+                "xl": "http://dummyimage.com/464x428.jpg/5fa2dd/ffffff"
+              }
+            ]
+          }
+        ],
+        "awards": ["Orange", "Purple", "Pink"]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "year": 2002,
+    "projectCategory": "Toyota",
+    "projectTitle": "maximized",
+    "projectStatus": "Male",
+    "projectExpandable": true,
+    "projectDetails": [
+      {
+        "summary": "Visionary tangible implementation",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/446x357.jpg/dddddd/000000",
+                "s": "http://dummyimage.com/339x321.jpg/dddddd/000000",
+                "m": "http://dummyimage.com/361x486.jpg/cc0000/ffffff",
+                "l": "http://dummyimage.com/348x480.jpg/ff4444/ffffff",
+                "xl": "http://dummyimage.com/306x413.jpg/ff4444/ffffff"
+              }
+            ]
+          }
+        ],
+        "awards": ["Teal", "Pink", "Goldenrod"]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "year": 1991,
+    "projectCategory": "Ford",
+    "projectTitle": "zero administration",
+    "projectStatus": "Male",
+    "projectExpandable": false,
+    "projectDetails": [
+      {
+        "summary": "Reduced demand-driven frame",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/429x397.jpg/ff4444/ffffff",
+                "s": "http://dummyimage.com/471x369.jpg/ff4444/ffffff",
+                "m": "http://dummyimage.com/432x391.jpg/5fa2dd/ffffff",
+                "l": "http://dummyimage.com/496x302.jpg/cc0000/ffffff",
+                "xl": "http://dummyimage.com/471x487.jpg/ff4444/ffffff"
+              }
+            ]
+          }
+        ],
+        "awards": ["Goldenrod", "Crimson", "Teal"]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "year": 1994,
+    "projectCategory": "Ford",
+    "projectTitle": "encoding",
+    "projectStatus": "Female",
+    "projectExpandable": true,
+    "projectDetails": [
+      {
+        "summary": "Function-based content-based database",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/336x424.jpg/cc0000/ffffff",
+                "s": "http://dummyimage.com/485x462.jpg/5fa2dd/ffffff",
+                "m": "http://dummyimage.com/308x473.jpg/cc0000/ffffff",
+                "l": "http://dummyimage.com/317x301.jpg/dddddd/000000",
+                "xl": "http://dummyimage.com/450x465.jpg/ff4444/ffffff"
+              }
+            ]
+          }
+        ],
+        "awards": ["Mauv", "Aquamarine", "Teal"]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "year": 2001,
+    "projectCategory": "Hyundai",
+    "projectTitle": "monitoring",
+    "projectStatus": "Female",
+    "projectExpandable": false,
+    "projectDetails": [
+      {
+        "summary": "Operative stable adapter",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/487x497.jpg/cc0000/ffffff",
+                "s": "http://dummyimage.com/491x429.jpg/ff4444/ffffff",
+                "m": "http://dummyimage.com/437x393.jpg/ff4444/ffffff",
+                "l": "http://dummyimage.com/306x345.jpg/dddddd/000000",
+                "xl": "http://dummyimage.com/329x494.jpg/5fa2dd/ffffff"
+              }
+            ]
+          }
+        ],
+        "awards": ["Blue", "Blue", "Fuscia"]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "year": 2007,
+    "projectCategory": "Chrysler",
+    "projectTitle": "full-range",
+    "projectStatus": "Female",
+    "projectExpandable": true,
+    "projectDetails": [
+      {
+        "summary": "Digitized needs-based encryption",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/317x363.jpg/cc0000/ffffff",
+                "s": "http://dummyimage.com/471x446.jpg/5fa2dd/ffffff",
+                "m": "http://dummyimage.com/308x338.jpg/dddddd/000000",
+                "l": "http://dummyimage.com/315x469.jpg/5fa2dd/ffffff",
+                "xl": "http://dummyimage.com/427x339.jpg/dddddd/000000"
+              }
+            ]
+          }
+        ],
+        "awards": ["Green", "Puce", "Teal"]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "year": 2001,
+    "projectCategory": "Acura",
+    "projectTitle": "Switchable",
+    "projectStatus": "Male",
+    "projectExpandable": false,
+    "projectDetails": [
+      {
+        "summary": "Right-sized asynchronous moderator",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/482x478.jpg/cc0000/ffffff",
+                "s": "http://dummyimage.com/349x320.jpg/dddddd/000000",
+                "m": "http://dummyimage.com/482x396.jpg/5fa2dd/ffffff",
+                "l": "http://dummyimage.com/318x317.jpg/ff4444/ffffff",
+                "xl": "http://dummyimage.com/436x310.jpg/5fa2dd/ffffff"
+              }
+            ]
+          }
+        ],
+        "awards": ["Green", "Puce", "Mauv"]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "year": 1960,
+    "projectCategory": "Chevrolet",
+    "projectTitle": "info-mediaries",
+    "projectStatus": "Female",
+    "projectExpandable": true,
+    "projectDetails": [
+      {
+        "summary": "Networked needs-based support",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/326x401.jpg/ff4444/ffffff",
+                "s": "http://dummyimage.com/375x330.jpg/5fa2dd/ffffff",
+                "m": "http://dummyimage.com/474x340.jpg/5fa2dd/ffffff",
+                "l": "http://dummyimage.com/323x384.jpg/dddddd/000000",
+                "xl": "http://dummyimage.com/370x485.jpg/ff4444/ffffff"
+              }
+            ]
+          }
+        ],
+        "awards": ["Violet", "Green", "Aquamarine"]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "year": 2004,
+    "projectCategory": "Pontiac",
+    "projectTitle": "Implemented",
+    "projectStatus": "Male",
+    "projectExpandable": true,
+    "projectDetails": [
+      {
+        "summary": "Assimilated discrete utilisation",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/304x341.jpg/cc0000/ffffff",
+                "s": "http://dummyimage.com/439x316.jpg/dddddd/000000",
+                "m": "http://dummyimage.com/440x323.jpg/5fa2dd/ffffff",
+                "l": "http://dummyimage.com/456x400.jpg/cc0000/ffffff",
+                "xl": "http://dummyimage.com/394x400.jpg/5fa2dd/ffffff"
+              }
+            ]
+          }
+        ],
+        "awards": ["Orange", "Purple", "Orange"]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "year": 2008,
+    "projectCategory": "BMW",
+    "projectTitle": "Re-contextualized",
+    "projectStatus": "Male",
+    "projectExpandable": false,
+    "projectDetails": [
+      {
+        "summary": "Total heuristic support",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/419x489.jpg/5fa2dd/ffffff",
+                "s": "http://dummyimage.com/451x316.jpg/ff4444/ffffff",
+                "m": "http://dummyimage.com/478x428.jpg/cc0000/ffffff",
+                "l": "http://dummyimage.com/333x440.jpg/5fa2dd/ffffff",
+                "xl": "http://dummyimage.com/382x389.jpg/ff4444/ffffff"
+              }
+            ]
+          }
+        ],
+        "awards": ["Maroon", "Blue", "Red"]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "year": 1996,
+    "projectCategory": "Buick",
+    "projectTitle": "success",
+    "projectStatus": "Male",
+    "projectExpandable": true,
+    "projectDetails": [
+      {
+        "summary": "Enterprise-wide next generation synergy",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/385x423.jpg/5fa2dd/ffffff",
+                "s": "http://dummyimage.com/315x401.jpg/cc0000/ffffff",
+                "m": "http://dummyimage.com/409x395.jpg/cc0000/ffffff",
+                "l": "http://dummyimage.com/327x460.jpg/5fa2dd/ffffff",
+                "xl": "http://dummyimage.com/400x427.jpg/ff4444/ffffff"
+              }
+            ]
+          }
+        ],
+        "awards": ["Green", "Mauv", "Red"]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "year": 1997,
+    "projectCategory": "Mitsubishi",
+    "projectTitle": "holistic",
+    "projectStatus": "Male",
+    "projectExpandable": true,
+    "projectDetails": [
+      {
+        "summary": "Focused multi-tasking approach",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/351x368.jpg/5fa2dd/ffffff",
+                "s": "http://dummyimage.com/339x422.jpg/5fa2dd/ffffff",
+                "m": "http://dummyimage.com/489x436.jpg/ff4444/ffffff",
+                "l": "http://dummyimage.com/367x492.jpg/ff4444/ffffff",
+                "xl": "http://dummyimage.com/400x365.jpg/5fa2dd/ffffff"
+              }
+            ]
+          }
+        ],
+        "awards": ["Khaki", "Pink", "Teal"]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "year": 1998,
+    "projectCategory": "Dodge",
+    "projectTitle": "encoding",
+    "projectStatus": "Female",
+    "projectExpandable": true,
+    "projectDetails": [
+      {
+        "summary": "Robust cohesive alliance",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/452x474.jpg/ff4444/ffffff",
+                "s": "http://dummyimage.com/467x491.jpg/cc0000/ffffff",
+                "m": "http://dummyimage.com/483x306.jpg/dddddd/000000",
+                "l": "http://dummyimage.com/429x355.jpg/cc0000/ffffff",
+                "xl": "http://dummyimage.com/329x412.jpg/dddddd/000000"
+              }
+            ]
+          }
+        ],
+        "awards": ["Purple", "Puce", "Aquamarine"]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "year": 1991,
+    "projectCategory": "Saab",
+    "projectTitle": "Universal",
+    "projectStatus": "Female",
+    "projectExpandable": false,
+    "projectDetails": [
+      {
+        "summary": "Re-engineered 4th generation concept",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/358x450.jpg/5fa2dd/ffffff",
+                "s": "http://dummyimage.com/330x317.jpg/ff4444/ffffff",
+                "m": "http://dummyimage.com/488x347.jpg/5fa2dd/ffffff",
+                "l": "http://dummyimage.com/351x438.jpg/5fa2dd/ffffff",
+                "xl": "http://dummyimage.com/404x484.jpg/cc0000/ffffff"
+              }
+            ]
+          }
+        ],
+        "awards": ["Puce", "Teal", "Puce"]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "year": 1996,
+    "projectCategory": "Ford",
+    "projectTitle": "synergy",
+    "projectStatus": "Male",
+    "projectExpandable": true,
+    "projectDetails": [
+      {
+        "summary": "Self-enabling homogeneous Graphical User Interface",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/463x463.jpg/5fa2dd/ffffff",
+                "s": "http://dummyimage.com/470x427.jpg/5fa2dd/ffffff",
+                "m": "http://dummyimage.com/386x435.jpg/ff4444/ffffff",
+                "l": "http://dummyimage.com/312x366.jpg/ff4444/ffffff",
+                "xl": "http://dummyimage.com/440x352.jpg/5fa2dd/ffffff"
+              }
+            ]
+          }
+        ],
+        "awards": ["Fuscia", "Crimson", "Red"]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "year": 1996,
+    "projectCategory": "Ford",
+    "projectTitle": "functionalities",
+    "projectStatus": "Male",
+    "projectExpandable": false,
+    "projectDetails": [
+      {
+        "summary": "Fundamental analyzing workforce",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/336x457.jpg/dddddd/000000",
+                "s": "http://dummyimage.com/315x392.jpg/dddddd/000000",
+                "m": "http://dummyimage.com/419x403.jpg/ff4444/ffffff",
+                "l": "http://dummyimage.com/425x438.jpg/ff4444/ffffff",
+                "xl": "http://dummyimage.com/370x469.jpg/5fa2dd/ffffff"
+              }
+            ]
+          }
+        ],
+        "awards": ["Green", "Crimson", "Turquoise"]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "year": 2010,
+    "projectCategory": "Nissan",
+    "projectTitle": "intermediate",
+    "projectStatus": "Male",
+    "projectExpandable": true,
+    "projectDetails": [
+      {
+        "summary": "Innovative clear-thinking matrix",
+        "slider_images": [
+          {
+            "imgOne": [
+              {
+                "xs": "http://dummyimage.com/432x495.jpg/5fa2dd/ffffff",
+                "s": "http://dummyimage.com/345x302.jpg/cc0000/ffffff",
+                "m": "http://dummyimage.com/485x346.jpg/dddddd/000000",
+                "l": "http://dummyimage.com/359x308.jpg/cc0000/ffffff",
+                "xl": "http://dummyimage.com/499x415.jpg/5fa2dd/ffffff"
+              }
+            ]
+          }
+        ],
+        "awards": ["Orange", "Aquamarine", "Crimson"]
+      }
+    ]
+  }
+]

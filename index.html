@@ -10,22 +10,38 @@
   <body>
     <div class="sortable-table">
       <div class="project-top">
-        <div class="project-top-text" id="sortYear">year</div>
-        <div class="project-top-text" id="sortCategory">category</div>
-        <div class="project-top-text" id="sortTitle">project title</div>
-        <div class="project-top-text" id="sortSize">size</div>
-        <div class="project-top-text" id="sortStatus">status</div>
+        <div class="project-top-text" data-sortby="asc" id="sortYear">year</div>
+        <div class="project-top-text" data-sortby="asc" id="sortCategory">
+          category
+        </div>
+        <div class="project-top-text" data-sortby="asc" id="sortTitle">
+          project title
+        </div>
+        <div class="project-top-text" data-sortby="asc" id="sortSize">size</div>
+        <div class="project-top-text" data-sortby="asc" id="sortStatus">
+          status
+        </div>
       </div>
     </div>
     <div class="sortable-table" id="project-table">
       <!-- Structure of each row item -->
       <div class="project-wrapper" id="0">
         <div class="project-row">
-          <div class="project-col"><p>2000</p></div>
-          <div class="project-col"><p>Residences</p></div>
-          <div class="project-col"><p>An Awesome Project</p></div>
-          <div class="project-col"><p>20,000 sqm</p></div>
-          <div class="project-col expandable" id="0-action">
+          <div class="project-col" data-year="2000"><p>2000</p></div>
+          <div class="project-col" data-category="Residences">
+            <p>Residences</p>
+          </div>
+          <div class="project-col" data-title="An Awesome Project">
+            <p>Testing element, it will never sort</p>
+          </div>
+          <div class="project-col" data-size="20,000 sqm">
+            <p>20,000 sqm</p>
+          </div>
+          <div
+            class="project-col expandable"
+            data-status="Completed"
+            id="0-action"
+          >
             <p>Completed</p>
           </div>
         </div>
@@ -195,11 +211,56 @@
               awards: ["Best Building Ever", "Highest Building Ever"]
             }
           ]
+        },
+        {
+          id: 4,
+          year: 1999,
+          projectCategory: "High SES",
+          projectTitle: "B Plus Complex",
+          projectSize: "31,000 sqm",
+          projectStatus: "Completed",
+          projectExpandable: true,
+          projectDetails: [
+            {
+              summary: "lorem ipsums",
+              slider_images: [
+                {
+                  imgOne: [
+                    {
+                      xs: "path-to-img.png",
+                      s: "path-to-img.png",
+                      m: "path-to-img.png",
+                      l: "path-to-img.png",
+                      xl: "path-to-img.png"
+                    }
+                  ],
+                  imgTwo: [
+                    {
+                      xs: "path-to-img.png",
+                      s: "path-to-img.png",
+                      m: "path-to-img.png",
+                      l: "path-to-img.png",
+                      xl: "path-to-img.png"
+                    }
+                  ],
+                  imgThree: [
+                    {
+                      xs: "path-to-img.png",
+                      s: "path-to-img.png",
+                      m: "path-to-img.png",
+                      l: "path-to-img.png",
+                      xl: "path-to-img.png"
+                    }
+                  ]
+                }
+              ],
+              awards: ["Best Building Ever", "Highest Building Ever"]
+            }
+          ]
         }
       ]
     };
-
-    const bar = foo.data;
   </script>
-  <script src="main.js"></script>
+  <script type="text/javascript" src="dummy.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 </html>

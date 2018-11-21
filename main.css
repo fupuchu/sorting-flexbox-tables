@@ -52,7 +52,6 @@ body {
 }
 
 .expanded {
-  padding-left: 18px;
   background-color: #ccc;
   display: none;
   overflow: hidden;
@@ -70,6 +69,28 @@ body {
 .expanded .project-details .text {
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
+}
+
+.expanded .project-details .text h1,
+.expanded .project-details .text .summary,
+.expanded .project-details .text .expanded-award {
+  padding: 0 20px 0 15px;
+}
+
+.expanded .project-details .text .summary {
+  background-color: rgba(255, 196, 35, 0.568);
+}
+
+.expanded .project-details .text .expanded-award {
+  background-color: rgba(20, 104, 214, 0.616);
+}
+
+.expanded .project-details .text .expanded-award ul {
+  padding: 0;
+}
+
+.expanded .project-details .text .expanded-award li {
+  list-style-type: none;
 }
 
 .expanded .project-details .slider {

@@ -102,33 +102,6 @@ body {
   width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-  .expanded {
-    padding-left: 0px;
-    background-color: greenyellow;
-  }
-  .expanded .project-details {
-    margin-bottom: 0px;
-  }
-  .expanded .project-details .text {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .expanded .project-details .slider {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .expanded .project-details .slider img {
-    width: 100%;
-  }
-}
-
 .project-top-text {
   text-transform: capitalize;
   padding: 10px 0 10px 0;
@@ -167,12 +140,68 @@ body {
       flex-basis: 15%;
 }
 
+.mobile-table {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+  .mobile-table {
+    display: block;
+  }
+  .expanded {
+    padding-left: 0px;
+    background-color: greenyellow;
+  }
+  .expanded .project-details {
+    margin-bottom: 0px;
+  }
+  .expanded .project-details .text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .expanded .project-details .slider {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .expanded .project-details .slider img {
+    width: 100%;
   }
   .sortable-table {
+    display: none;
+  }
+  .project-top {
+    display: block;
+    text-align: center;
+    border-bottom: 0;
+  }
+  .year-group {
+    border-bottom: 1px solid royalblue;
+  }
+  .project-row {
+    padding: 0;
+    border-bottom: 0;
+    display: block;
+  }
+  .project-row div {
     width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid salmon;
+  }
+  .project-row div:nth-child(odd) {
+    background-color: whitesmoke;
+  }
+  .project-row .m-modal {
+    background-color: cornflowerblue;
+  }
+  .project-row p {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=main.css.map */

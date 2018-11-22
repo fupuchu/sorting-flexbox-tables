@@ -72,26 +72,6 @@ body {
     }
   }
 }
-@media only screen and (max-width: 600px) {
-  .expanded {
-    padding-left: 0px;
-    background-color: greenyellow;
-    .project-details {
-      margin-bottom: 0px;
-      .text {
-        flex-basis: 100%;
-        order: 2;
-      }
-      .slider {
-        order: 1;
-        flex-basis: 100%;
-        img {
-          width: 100%;
-        }
-      }
-    }
-  }
-}
 // .active {
 //   max-height: 100%;
 //   background-color: #ccc;
@@ -122,12 +102,61 @@ body {
     flex-basis: 15%;
   }
 }
+.mobile-table {
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+  .mobile-table {
+    display: block;
+  }
+  .expanded {
+    padding-left: 0px;
+    background-color: greenyellow;
+    .project-details {
+      margin-bottom: 0px;
+      .text {
+        flex-basis: 100%;
+        order: 2;
+      }
+      .slider {
+        order: 1;
+        flex-basis: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
   .sortable-table {
-    width: 100%;
+    display: none;
+  }
+  .project-top {
+    display: block;
+    text-align: center;
+    border-bottom: 0;
+  }
+  .year-group {
+    border-bottom: 1px solid royalblue;
+  }
+  .project-row {
+    padding: 0;
+    border-bottom: 0;
+    display: block;
+    div {
+      width: 100%;
+      padding: 10px;
+      border-bottom: 1px solid salmon;
+    }
+    div:nth-child(odd) {
+      background-color: whitesmoke;
+    }
+    .m-modal {
+      background-color: cornflowerblue;
+    }
+    p {
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 }

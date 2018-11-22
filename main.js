@@ -42,8 +42,6 @@ for (let i = 0; i < bar.length; i++) {
     const awardsData = bar[i].projectDetails[0].awards;
     const awardsCount = bar[i].projectDetails[0].awards.length;
 
-    console.log(awardsCount);
-
     for (let n = 0; n < awardsCount; n++) {
       $(`#awards-list-${bar[i].id}`).append(`
           <li>${awardsData[n].award_year} ${awardsData[n].award_title}</li>
@@ -73,6 +71,59 @@ for (let i = 0; i < bar.length; i++) {
   }
 }
 
+// Mobile version populating
+
+// Creates the top level year first
+// Appends the remaining div matching the year attribute
+
+// takes in the json/obj and key you want
+function sortForMobile(json, key) {
+  if (typeof json !== "object") {
+    console.log("Requires a valid Object/JSON");
+    return false;
+  }
+  // Get years from obj and store them in an array
+  const tempArray = [];
+  json.forEach(i => tempArray.push(i[key]));
+  const returnArray = tempArray
+    .filter((n, i) => tempArray.indexOf(n) === i)
+    .sort()
+    .reverse();
+  return returnArray;
+}
+const mobileYears = sortForMobile(bar, "year");
+
+for (let i = 0; i < mobileYears.length; i++) {
+  $(".mobile-table").append(`
+  <div class="project-top" id="m-year-${i}">
+  <div class="year-group"><h1>${mobileYears[i]}</h1></div>
+  <div class="project-row" id="m-row-${i}" data-myear="${mobileYears[i]}"></div>
+  </div>
+  `);
+}
+let testCounter = 0;
+const tempBar = [];
+
+for (let i = 0; i < bar.length; i++) {
+  for (let j = 0; j < mobileYears.length; j++) {
+    testCounter++;
+    if (bar[i].year == mobileYears[j]) {
+      // console.log(`${bar[i].year} is equals to ${mobileYears[j]}`);
+      if (bar[i].projectExpandable == true) {
+        $(`#m-row-${j}`).append(`
+        <div class="m-modal">${bar[i].year} ${bar[i].projectTitle}</div>
+      `);
+      } else {
+        $(`#m-row-${j}`).append(`
+      <div>${bar[i].year} ${bar[i].projectTitle}</div>
+      `);
+      }
+    }
+  }
+}
+
+console.log(testCounter);
+
 // @Misc
 // Test function for static element not added in by the for loop above
 // Remove in production
@@ -99,6 +150,8 @@ const sortingOptions = {
 // the parent div
 // the children div
 // sortby Data
+
+// You still have to add the cases yourself depending on what you want it to sort by
 
 function sortMe(parent, children, sortBy) {
   const sortArray = [];

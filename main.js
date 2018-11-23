@@ -49,7 +49,7 @@ for (let i = 0; i < bar.length; i++) {
     }
 
     $(`#${bar[i].id}-action`).click(() => {
-      $(`#${bar[i].id}-expand`).slideToggle("fast");
+      $(`#${bar[i].id}-expand`).slideToggle();
     });
   } else {
     $("#project-table").append(`
@@ -65,8 +65,8 @@ for (let i = 0; i < bar.length; i++) {
     <div class="project-col"><p>${bar[i].projectTitle}</p></div>
     <div class="project-col"><p>${bar[i].projectSize}</p></div>
     <div class="project-col"><p>${bar[i].projectStatus}</p></div>
-  </div>
-  </div>
+    </div>
+    </div>
   `);
   }
 }
@@ -101,32 +101,44 @@ for (let i = 0; i < mobileYears.length; i++) {
   </div>
   `);
 }
-let testCounter = 0;
 const tempBar = [];
 
 for (let i = 0; i < bar.length; i++) {
   for (let j = 0; j < mobileYears.length; j++) {
-    testCounter++;
     if (bar[i].year == mobileYears[j]) {
-      // console.log(`${bar[i].year} is equals to ${mobileYears[j]}`);
       if (bar[i].projectExpandable == true) {
         $(`#m-row-${j}`).append(`
-        <div class="m-modal">${bar[i].year} ${bar[i].projectTitle}</div>
+        <div class="m-modal" id="m-modal-${bar[i].id}">${
+          bar[i].projectTitle
+        } Click Me!</div>
+        <div class="m-modal-wrapper" id="m-modal-content-${bar[i].id}">
+        <div class="m-modal-content">
+        <div class="close">+</div>
+        <h2>${bar[i].year}</h2>
+        <h1>${bar[i].projectTitle}</h1>
+        <p>Modal Content</p>
+        </div>
+        </div>
       `);
+        $(`#m-modal-${bar[i].id}`).click(() => {
+          $(`#m-modal-content-${bar[i].id}`).show();
+        });
+        $(`#m-modal-content-${bar[i].id}`).click(() => {
+          $(`#m-modal-content-${bar[i].id}`).hide();
+        });
       } else {
         $(`#m-row-${j}`).append(`
-      <div>${bar[i].year} ${bar[i].projectTitle}</div>
+      <div>${bar[i].projectTitle}</div>
       `);
       }
     }
   }
 }
 
-console.log(testCounter);
-
 // @Misc
 // Test function for static element not added in by the for loop above
 // Remove in production
+
 $("#0-action").click(() => {
   $("#0-expand").slideToggle();
 });

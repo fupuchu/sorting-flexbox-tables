@@ -1,4 +1,13 @@
-// Populating the Table
+// Contents
+// 1. @Desktop Table
+// 2. @Mobile Table
+// 3. @Sorting
+// 4. @Initializers
+// 5. @Helpers
+
+///////////////////////
+//  @Desktop Table   //
+///////////////////////
 const bar = dummyData;
 for (let i = 0; i < bar.length; i++) {
   if (bar[i].projectExpandable == true) {
@@ -7,7 +16,7 @@ for (let i = 0; i < bar.length; i++) {
     data-year="${bar[i].year}"
     data-category="${bar[i].projectCategory}"
     data-title="${bar[i].projectTitle}"
-    data-size="${bar[i].projectSize}"
+    data-nsize="${bar[i].projectSize}"
     data-status="${bar[i].projectStatus}">
     <div class="project-row">
     <div class="project-col"><p>${bar[i].year}</p></div>
@@ -57,7 +66,7 @@ for (let i = 0; i < bar.length; i++) {
     data-year="${bar[i].year}"
     data-category="${bar[i].projectCategory}"
     data-title="${bar[i].projectTitle}"
-    data-size="${bar[i].projectSize}"
+    data-nsize="${bar[i].projectSize}"
     data-status="${bar[i].projectStatus}">
     <div class="project-row">
     <div class="project-col"><p>${bar[i].year}</p></div>
@@ -71,7 +80,9 @@ for (let i = 0; i < bar.length; i++) {
   }
 }
 
-// Mobile version populating
+///////////////////////
+//  @Mobile Table    //
+///////////////////////
 
 // Creates the top level year first
 // Appends the remaining div matching the year attribute
@@ -79,12 +90,15 @@ for (let i = 0; i < bar.length; i++) {
 // takes in the json/obj and key you want
 function sortForMobile(json, key) {
   if (typeof json !== "object") {
-    console.log("Requires a valid Object/JSON");
     return false;
   }
   // Get years from obj and store them in an array
+  // checks for duplicates and sorts them in desc
   const tempArray = [];
-  json.forEach(i => tempArray.push(i[key]));
+  for (let i = 0; i < json.length; i++) {
+    tempArray.push(json[i][key]);
+  }
+  console.log(tempArray);
   const returnArray = tempArray
     .filter((n, i) => tempArray.indexOf(n) === i)
     .sort()
@@ -135,32 +149,27 @@ for (let i = 0; i < bar.length; i++) {
   }
 }
 
-// @Misc
-// Test function for static element not added in by the for loop above
-// Remove in production
-
-$("#0-action").click(() => {
-  $("#0-expand").slideToggle();
-});
-
-// @Sorting
+///////////////////////
+//      @Sorting     //
+///////////////////////
 // Sorts all divs elements based on the value in the datasets
 
 const getParentNode = document.getElementById("project-table");
+
+//error cehcking
 const getChildrenNodes = getParentNode.children;
 
 const sortingOptions = {
   year: $("#sortYear"),
   category: $("#sortCategory"),
   title: $("#sortTitle"),
-  size: $("#sortSize"),
+  nsize: $("#sortSize"),
   status: $("#sortStatus")
 };
 
-// Sorting Function
 // Requires 3 arguments:
-// the parent div
-// the children div
+// parent div
+// children div
 // sortby Data
 
 // You still have to add the cases yourself depending on what you want it to sort by
@@ -216,22 +225,23 @@ function sortMe(parent, children, sortBy) {
       break;
 
     case "size":
-      if (size[0].dataset.sortby == "desc") {
+      if (nsize[0].dataset.sortby == "desc") {
         sortArray
           .sort(
             (a, b) =>
-              formatString(a.dataset.size) - formatString(b.dataset.size)
+              formatString(a.dataset.nsize) - formatString(b.dataset.nsize)
           )
           .map(node => parent.appendChild(node));
-        size[0].dataset.sortby = "asc";
-      } else if (size[0].dataset.sortby == "asc") {
+        console.log;
+        nsize[0].dataset.sortby = "asc";
+      } else if (nsize[0].dataset.sortby == "asc") {
         sortArray
           .sort(
             (a, b) =>
-              formatString(b.dataset.size) - formatString(a.dataset.size)
+              formatString(b.dataset.nsize) - formatString(a.dataset.nsize)
           )
           .map(node => parent.appendChild(node));
-        size[0].dataset.sortby = "desc";
+        nsize[0].dataset.sortby = "desc";
       }
 
       break;
@@ -302,9 +312,13 @@ function sortMe(parent, children, sortBy) {
   }
 }
 
+///////////////////////
+//   @Initializers   //
+///////////////////////
+
 // Click events initializers
 // Deconstructing for use when initializing click events
-const { year, category, title, size, status } = sortingOptions;
+const { year, category, title, nsize, status } = sortingOptions;
 
 $(year).click(() => {
   sortMe(getParentNode, getChildrenNodes, "year");
@@ -315,13 +329,16 @@ $(category).click(() => {
 $(title).click(() => {
   sortMe(getParentNode, getChildrenNodes, "title");
 });
-$(size).click(() => {
+$(nsize).click(() => {
   sortMe(getParentNode, getChildrenNodes, "size");
 });
 $(status).click(() => {
   sortMe(getParentNode, getChildrenNodes, "status");
 });
 
+///////////////////////
+// @Helpers functions//
+///////////////////////
 // Removes any alphabets, commas, from a string.
 // Returns a string
 // Example:
